@@ -1,0 +1,47 @@
+{
+  "name": "drawdown-bake",
+  "version": "1.0.0",
+  "description": "Drawdown bake is a tool for baking markdown documents with drawdown diagram scripts into markdown documents with diagram images",
+  "bin": {
+    "drawdown-bake": "bin/drawdown-bake.js"
+  },
+  "scripts": {
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyubo-slavilov/drawdown-bake"
+  },
+  "author": "Lyubomir Slavilov",
+  "license": "ISC",
+  "homepage": "https://github.com/lyubo-slavilov/drawdown-bake/README.md",
+  "dependencies": {
+    "drawdown-parser": "^1.6.0",
+    "drawdown-svg-render": "^1.5.0",
+    "fs-extra": "^7.0.1",
+    "http-server": "^0.11.1",
+    "markdown-it": "^8.4.2",
+    "minimist": "^1.2.0",
+    "puppeteer": "^1.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "typeface-roboto": "0.0.54",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
