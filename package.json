@@ -8,7 +8,10 @@
   "scripts": {
     "build": "webpack --mode=production",
     "prepublish": "rm -rf web && rm -rf bin && npm run build",
-    "patch-package": "npm version patch && npm publish "
+    "publish-patch": "npm version patch && npm publish",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-major": "npm version major && npm publish",
+    "postpublish": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
