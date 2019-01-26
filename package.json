@@ -6,7 +6,9 @@
     "drawdown-bake": "bin/drawdown-bake.js"
   },
   "scripts": {
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "prepublish": "rm -rf web && rm -rf bin && npm run build",
+    "patch-package": "npm version patch && npm publish "
   },
   "repository": {
     "type": "git",
