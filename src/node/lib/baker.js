@@ -11,14 +11,15 @@ const readAndParseFile = function(file) {
   return [text, diagramsInfo];
 
 }
+const randV = () => (new Date()).getTime().toString();
 
-const saveFile = function(file, text) {
+const saveFile = (file, text) =>  {
   let dirname = path.dirname(file);
   fsExtra.ensureDirSync(dirname);
   fs.writeFileSync(file, text);
 }
 
-const copyFile = function(src, target) {
+const copyFile = (src, target) => {
   let dirname = path.dirname(target);
   fsExtra.ensureDirSync(dirname);
   fs.copyFileSync(src, target);
@@ -64,7 +65,7 @@ const fileAssembler = (browser, destDir) => {
         omitBackground: true,
         fullPage: true
       });
-      const imageTag = `![Diagram](${imageRelPath})`;
+      const imageTag = `![Diagram](${imageRelPath}?v=${randV()})`;
 
 
       await browserPage.close();
@@ -93,8 +94,6 @@ const fileAssembler = (browser, destDir) => {
     })
   }
 }
-
-
 
 module.exports = (srcDir, destDir) => {
   return (browser, files, extensions, layouts) => {
