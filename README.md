@@ -1,5 +1,6 @@
 # Drawdown Bake
 Drawdown bake is a tool for baking markdown documents with drawdown diagram scripts into markdown documents with diagram images
+![](./assets/screenshot.png)
 
 ## Installation
 
