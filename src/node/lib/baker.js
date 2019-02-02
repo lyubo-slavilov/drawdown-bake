@@ -87,7 +87,8 @@ const fileAssembler = (browser, destDir) => {
           sliceStart = info.sourceMap[1];
           return acc;
         }, []);
-
+        assembled = assembled.concat(lines.slice(sliceStart, lines.length - 1));
+        assembled.push('');
         saveFile(fileFullPath, assembled.join('\n'));
         resolve();
       })
