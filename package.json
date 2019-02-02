@@ -1,6 +1,6 @@
 {
   "name": "drawdown-bake",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Drawdown bake is a tool for baking markdown documents with drawdown diagram scripts into markdown documents with diagram images",
   "bin": {
     "drawdown-bake": "bin/drawdown-bake.js"
