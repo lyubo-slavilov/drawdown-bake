@@ -21,8 +21,8 @@
   "license": "ISC",
   "homepage": "https://github.com/lyubo-slavilov/drawdown-bake/README.md",
   "dependencies": {
-    "drawdown-parser": "^1.6.0",
-    "drawdown-svg-render": "^1.5.0",
+    "drawdown-parser": "^1.6.1",
+    "drawdown-svg-render": "^1.5.2",
     "fs-extra": "^7.0.1",
     "http-server": "^0.11.1",
     "markdown-it": "^8.4.2",
