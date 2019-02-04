@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 14.4px;
+}
+body {
+  overflow: hidden;
+}
+.links line {
+  stroke: #aaa;
+}
+.links path {
+  stroke: #aaa;
+  fill: none;
+}
+.nodes rect {
+  pointer-events: all;
+  stroke: black;
+  strokeWeight: 1;
+  fill: whitesmoke;
+}
+text {
+  fill: black;
+}
+
+svg.dd-diagram {
+  fill: white;
+  stroke: black;
+  .dd-block {
+    text {
+      stroke: none;
+    }
+  }
+  .dd-link-label {
+    stroke: none;
+  }
+  .dd-link-tail {
+    fill: none;
+  }
+  .dd-link-head {
+    fill: black
+  }
+  .dd-timeline {
+    stroke: black;
+    stroke-width: 2px;
+  }
+}

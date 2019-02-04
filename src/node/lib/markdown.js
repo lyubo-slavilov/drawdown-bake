@@ -8,7 +8,7 @@ module.exports = (text) => {
   //Init Markdown parser
   md.renderer.rules.fence =  function (tokens, idx, options, env, self) {
     const token = tokens[idx];
-    const regex = /drawdown\.(flow|graph|tree)\.([a-zA-Z][0-9a-zA-Z\-\_]*)/g;
+    const regex = /drawdown\.(flow|graph|tree|sequence)\.([a-zA-Z][0-9a-zA-Z\-\_]*)/g;
 
     try {
       const [fullMatch, diagramType, diagramName] = regex.exec(token.info);
